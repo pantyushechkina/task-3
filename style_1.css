@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Scheherazade New', serif;
+
+    
+}
+body{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+     
+}
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+}
+table{
+    width: 70%;
+    height: 100%;
+}
+table tr td img{
+    width: 280px;
+    
+}
+.form-color{
+    padding-top: 60px;
+}
+.form-color input{
+    color: black;
+    width: 50px;
+}
+#butt1{
+    background-color: rgba(162, 10, 233);
+}
+#butt2{
+    background-color: rgb(233, 10, 148);
+}
+#butt3{
+    background-color: rgb(10, 188, 233);
+}
+header{
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    color: white;
+    width: 100%;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 20% 80%;
+    height: 100%;
+    align-items: center;
+}
+.main_info{
+    background: url("orig.jfif") no-repeat center center / cover;
+    height: 100%;
+    box-shadow: inset 9px 0px 20px 0px rgb(11 11 11)
+}
+.about{
+    margin-top: 20%;
+}
+.sidebar_news{
+    background-color: rgb(14 13 13);
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr;
+}
+.sidebar_news div{
+    border-bottom: solid white;
+    background: #1d1d1d;
+    margin: 10px;
+}
+.sidebar_news p {
+    font-size: 15px;
+    text-align: justify;
+    line-height: 1.5;
+    margin: 15px;
+}
+.wrap_table{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    
+}
+.img{
+    object-fit: cover;
+    width: 60%;
+    height: 100%;
+    box-shadow: 0 0px 10px rgba(233, 10, 148, .8);
+}
+.photo1{
+    background-size: cover;
+    display: grid;
+    grid-row-gap: 1em;
+    
+}
+.photo2{
+    background-size: cover;
+    display: grid;
+    grid-row-gap: 1em;
+}
+.box1{
+    background-size: cover;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    height: 100px;
+    width: 100%;
+}
+.navbar ul{
+    display: flex;
+    list-style: none;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+}
+.navbar ul li{
+    margin: 15px;
+    padding: 10px 20px;
+    border: white solid;
+}
+.navbar ul li:hover{
+    background-color: white;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar ul li a:hover{
+    color: black;
+}
+header{
+    top: 10px;
+}
+header p {
+    text-align: center;
+}
+
+#sect{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact{
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 20px rgb(51, 51, 51);
+    background-color: #393939b3;
+    color: white;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+.contact input{
+    width: 70%;
+    padding: 5px;
+}
+.contact textarea{
+    width: 70%;
+    padding: 5px;
+}
+.contact label{
+    float: left;
+    width: 20%;
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+textarea{
+    resize: vertical;
+}
+button[type="submit"]{
+    width: 40%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    font-size: 24px;
+    border-radius: 8px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: center;
+}
+section h1{
+    font-size: 5rem;
+    color: white;
+}
+
+section p{
+    font-size: 1.5rem;
+    color: white;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    color: white;
+}
+
+section#table{
+    background: url(orig\ \(1\).jfif) no-repeat center center / cover;
+}
+section#info{
+    background: url(Starcourt\ Mall.png) no-repeat center center / cover;
+}
+
+@media screen and (min-width: 700px) {
+    .contact{
+        max-width: 600px;
+        font-size: 60px;
+    }
+    .sidebar_news div {
+        margin: 0;
+    }
+    .about{
+        margin-top: 35%;
+    }
+    .navbar{
+        height: 160px;
+    }
+    .img{
+        width: 90%;
+    }
+  }
+  

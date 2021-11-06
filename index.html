@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- подключение словаря,RDFa -->
+<html lang="en" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="fan page about the tv series 'Stranger Things'">
+        <title>task 1</title>
+        <!-- Подключение CSS-файла style_1.css-->
+        <link rel="stylesheet" href="style_1.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/2a6bc6b083.js" crossorigin="anonymous"></script>
+        <script>
+            function changeColor(color){
+                document.getElementById("img1").style.boxShadow = color;
+                document.getElementById("img2").style.boxShadow = color;
+                document.getElementById("img3").style.boxShadow = color;
+                document.getElementById("img4").style.boxShadow = color;
+                document.getElementById("img5").style.boxShadow = color;
+            }
+        </script>
+    </head>
+    <!-- словарь, который по умолчанию будет использоваться в аннотациях,RDFa -->
+    <body vocab="http://schema.org/">
+        <!-- Представление верхнего колонтитула элемента, стандарт ARIA -->
+        <header role="heading">
+            <p>fan page about the tv series <b>"Stranger Things"</b></p>
+        </header>
+        <main class="container" >
+            <!-- Навигация по сайту -->
+            <nav class="navbar" itemprop="navigation">
+                <ul>
+                    <!-- Список для меню с ссылками на страницы -->
+                    <li>
+                        <a href="#home">HOME</a>
+                    </li>
+                    <li>
+                         <a href="#table">TABLE</a>
+                     </li>
+                     <li>
+                         <a href="#info">ABOUT</a>
+                     </li>
+                </ul>
+            </nav>
+            <!-- основное содержимое -->
+            <section id="home">
+                <div class="wrapper">
+                    <div class="sidebar_news">
+                        <div>
+                        <p>В 6-й серии первого сезона герой Дэвида Харбора перечисляет
+                        различные организации, которые могут следить за ним. Также он упоминает
+                        Аль-Каида. Но данная группировка была сформирована только в 1988 году,
+                        в то время как события в сериале происходят в 1983-м.</p>
+                        </div>
+                        <div>
+                        <p>Некоторые автомобили, использующиеся в сериале,
+                        произведены после 1983 года. Например джип
+                        Джима Хоппера — 1985 Chevrolet Blazer, а автомобиль 
+                        полиции Хоукинса — 1984 Dodge Diplomat.</p>
+                        </div>
+                        <div>
+                            <p>Первоначально братья Дафферы хотели сделать ремейк фильма 
+                                «Оно» Стивена Кинга, но позже передумали. Когда они решили 
+                                создать «Очень странные дела», в сериале осталось
+                                 очень много отсылок к работам писателя.</p>
+                        </div>
+                    </div>
+                    <div class="main_info">
+                        <div class="about">
+                            <h1>STRANGER THINGS</h1>
+                            <p>When a young boy vanishes, 
+                                a small town uncovers a mystery
+                                involving secret experiments,
+                                terrifying supernatural forces and one 
+                                strange little girl.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </section>
+            <section id="table">
+                <form action="" class="form-color" itemprop="colorChangeButton">
+                    <input type="button" id="butt1" onclick="changeColor('0 0px 10px rgba(162, 10, 233, 0.8)')">
+                    <input type="button" id="butt2" onclick="changeColor('0 0px 10px rgba(233, 10, 148, .8)')">
+                    <input type="button" id="butt3" onclick="changeColor('0 0px 10px rgba(10, 188, 233, .8)')">
+                </form>
+                <div class="wrap_table">
+                    <div class="photo1">
+                        <div class="box1">
+                            <img class="img img1" id="img1" itemprop="image" src="orig (2).jfif" cover>
+                        </div>
+                        <div class="box2">
+                            <img class="img img2" id="img2" itemprop="image" src="orig (3).jfif">
+                        </div>
+                        <div>
+                            <img class="img img3" id="img3" itemprop="image" src="orig (4).jfif">
+                        </div>
+                    </div>
+                    <div class="photo2">
+                        <div class="box4">
+                            <img class="img img4" id="img4" itemprop="image" src="orig (5).jfif">
+                        </div>
+                        <div class="box5">
+                            <img class="img img5" id="img5" itemprop="image" src="orig (6).jfif">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="info">
+                <div id="sect">
+                    <!-- Форма для отпраки сообщений на почту (примитивная)-->
+                    <div class="contact">
+                        <form action="" >
+                            <div class="form-group" >
+                                <h3>Made by: Anastasia Pantyushechkina</h3>
+                                <h3>Contact me</h3>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="text" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" ></textarea>
+                            </div>
+                            
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Pantyushechkina Anastasia, v: 1.0</p>
+        </footer>
+    </body>
+</html>
